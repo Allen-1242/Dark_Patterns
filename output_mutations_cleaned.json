@@ -1,37 +1,206 @@
-[
-  {
-    "type": "attributes",
-    "attributeName": "class",
-    "text": "Quick add",
-    "target": "<button class=\"button is-adding\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
-    "uid": "uid-0"
-  },
-  {
-    "type": "attributes",
-    "attributeName": "data-uid",
-    "text": "Quick add",
-    "target": "<button class=\"button is-adding\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
-    "uid": "uid-0"
-  },
-  {
-    "type": "attributes",
-    "attributeName": "hidden",
-    "text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
-    "target": "<div class=\"popover-content\" hidden=\"\" data-uid=\"uid-1\"> <div class=\"content-scroll\"> The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are",
-    "uid": "uid-1"
-  },
-  {
-    "type": "attributes",
-    "attributeName": "data-uid",
-    "text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
-    "target": "<div class=\"popover-content\" hidden=\"\" data-uid=\"uid-1\"> <div class=\"content-scroll\"> The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are",
-    "uid": "uid-1"
-  },
-  {
-    "type": "attributes",
-    "attributeName": "class",
-    "text": "Quick add",
-    "target": "<button class=\"button\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
-    "uid": "uid-0"
-  }
-]
+{
+  "uid-0": [
+    {
+      "uid": "uid-0",
+      "type": "attributes",
+      "attributeName": "class",
+      "visible_text": "Quick add",
+      "oldValue": "button",
+      "newValue": "button is-adding",
+      "mutation_index": 1,
+      "global_index": 0,
+      "context_text": "Quick add",
+      "tag_summary": "BUTTON button"
+    },
+    {
+      "uid": "uid-0",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "Quick add",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 1,
+      "context_text": "Quick add",
+      "tag_summary": "BUTTON button"
+    },
+    {
+      "uid": "uid-0",
+      "type": "attributes",
+      "attributeName": "class",
+      "visible_text": "Quick add",
+      "oldValue": "button is-adding",
+      "newValue": "button",
+      "mutation_index": 3,
+      "global_index": 11,
+      "context_text": "Quick add",
+      "tag_summary": "BUTTON button"
+    }
+  ],
+  "uid-1": [
+    {
+      "uid": "uid-1",
+      "type": "attributes",
+      "attributeName": "hidden",
+      "visible_text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 1,
+      "global_index": 2,
+      "context_text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+      "tag_summary": "DIV popover-content"
+    },
+    {
+      "uid": "uid-1",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 4,
+      "context_text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+      "tag_summary": "DIV popover-content"
+    }
+  ],
+  "uid-2": [
+    {
+      "uid": "uid-2",
+      "type": "attributes",
+      "attributeName": "aria-expanded",
+      "visible_text": "More info",
+      "oldValue": "false",
+      "newValue": "false",
+      "mutation_index": 1,
+      "global_index": 3,
+      "context_text": "More info",
+      "tag_summary": "BUTTON popover-button"
+    },
+    {
+      "uid": "uid-2",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "More info",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 5,
+      "context_text": "More info",
+      "tag_summary": "BUTTON popover-button"
+    }
+  ],
+  "uid-3": [
+    {
+      "uid": "uid-3",
+      "type": "attributes",
+      "attributeName": "data-modal-id",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 1,
+      "global_index": 6,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal"
+    },
+    {
+      "uid": "uid-3",
+      "type": "attributes",
+      "attributeName": "data-modal-type",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 7,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal"
+    },
+    {
+      "uid": "uid-3",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 3,
+      "global_index": 9,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal"
+    },
+    {
+      "uid": "uid-3",
+      "type": "attributes",
+      "attributeName": "style",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 4,
+      "global_index": 13,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal"
+    },
+    {
+      "uid": "uid-3",
+      "type": "attributes",
+      "attributeName": "aria-hidden",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": "true",
+      "newValue": "false",
+      "mutation_index": 5,
+      "global_index": 14,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal"
+    }
+  ],
+  "uid-4": [
+    {
+      "uid": "uid-4",
+      "type": "childList",
+      "attributeName": null,
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 1,
+      "global_index": 8,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal-body"
+    },
+    {
+      "uid": "uid-4",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 10,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV modal-body"
+    }
+  ],
+  "uid-5": [
+    {
+      "uid": "uid-5",
+      "type": "attributes",
+      "attributeName": "data-current-variant",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": "33189405622360",
+      "newValue": "33189405622360",
+      "mutation_index": 1,
+      "global_index": 12,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV "
+    },
+    {
+      "uid": "uid-5",
+      "type": "attributes",
+      "attributeName": "data-uid",
+      "visible_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "oldValue": null,
+      "newValue": null,
+      "mutation_index": 2,
+      "global_index": 15,
+      "context_text": "387 reviews \nApple Cider Vinegar Gummies\n\nEnhanced with B-Vitamins\n\nOne-time purchase\n$19\nSubscribe & Save 15%\n$16.15 $19\nQuantity\n$19 \u2022 Add to cart",
+      "tag_summary": "DIV "
+    }
+  ]
+}

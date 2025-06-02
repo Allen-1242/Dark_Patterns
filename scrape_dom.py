@@ -5,9 +5,9 @@ import time
 
 from playwright.sync_api import sync_playwright
 from behavior_interface.infer_intent import infer_expected_behavior
-from behavior_interface.clean_mutations import clean_mutations
+from behavior_interface.clean_mutations import clean_mutations, generate_mutation_timeline
 
-# Fix module path
+# Ensure local modules can be imported
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 MUTATION_OBSERVER_SCRIPT = """
@@ -62,32 +62,54 @@ def scrape_dom(url, selector_to_click="text='Close'", output_prefix="output"):
         print("Waiting for mutations...")
         time.sleep(3)
 
+        # Capture visible page text once
+        try:
+            visible_text = page.evaluate("() => document.body.innerText")
+            with open(f"{output_prefix}_visible_text.txt", "w", encoding="utf-8") as f:
+                f.write(visible_text.strip())
+        except Exception as e:
+            print(f"Failed to extract visible text: {e}")
+            visible_text = ""
+
         # Save DOM after mutation
         html = page.content()
         with open(f"{output_prefix}_dom_snapshot.html", "w", encoding="utf-8") as f:
             f.write(html)
 
-        # Save mutation logs (raw)
+        # Save raw mutation logs
         mutations = page.evaluate("() => window.mutationLogs")
         with open(f"{output_prefix}_mutations.json", "w", encoding="utf-8") as f:
             json.dump(mutations, f, indent=2)
         print(f"Saved DOM snapshot and {len(mutations)} mutations.")
 
-        # Extract UIDs
+        # Build UID → element handle map
         uids = [m.get("uid") for m in mutations if "uid" in m]
-        uid_text_map = {}
-        for uid in uids:
+        uid_element_map = {}
+        for uid in set(uids):
             try:
-                elem = page.query_selector(f"[data-uid='{uid}']")
-                uid_text_map[uid] = elem.inner_text().strip() if elem else ""
+                # Query the element by its data-uid attribute
+                elem_handle = page.query_selector(f"[data-uid='{uid}']")
+                uid_element_map[uid] = elem_handle
             except Exception:
-                uid_text_map[uid] = ""
+                uid_element_map[uid] = None
 
-        # Clean mutation logs with added text context
-        cleaned = clean_mutations(mutations, uid_text_map)
+        # Clean mutation logs using enriched DOM context
+        cleaned = clean_mutations(mutations, uid_text_map={uid: page.query_selector(f"[data-uid='{uid}']").inner_text().strip() if page.query_selector(f"[data-uid='{uid}']") else "" for uid in uids},
+                                  visible_text=visible_text,
+                                  uid_element_map=uid_element_map)
         with open(f"{output_prefix}_mutations_cleaned.json", "w", encoding="utf-8") as f:
             json.dump(cleaned, f, indent=2)
-        print(f"[✓] Cleaned {len(cleaned)} mutation records.")
+        print(f"[✓] Cleaned {sum(len(v) for v in cleaned.values())} mutation records.")
+
+        # Generate and print mutation timeline per UID (optional)
+        timeline = generate_mutation_timeline(mutations, {uid: page.query_selector(f"[data-uid='{uid}']").inner_text().strip() if page.query_selector(f"[data-uid='{uid}']") else "" for uid in uids})
+        for uid, data in timeline.items():
+            print(f"\n🧩 UID: {uid}")
+            print(f"Target: {data['target']}")
+            print(f"Visible Text: {data['visible_text']}\n---")
+            for e in data["events"]:
+                change = f"{e['oldValue']} → {e['newValue']}" if e["oldValue"] else f"→ {e['newValue']}"
+                print(f"[{e['index']}] ({e['type']}) {e['attributeName']} changed {change}")
 
         # Capture expected behavior
         try:
@@ -108,20 +130,10 @@ def scrape_dom(url, selector_to_click="text='Close'", output_prefix="output"):
             with open(f"{output_prefix}_expected.json", "w", encoding="utf-8") as f:
                 json.dump(expected, f, indent=2)
             print("Expected behavior inferred and saved.")
-
         except Exception as e:
             print(f"Failed to infer expected behavior: {e}")
 
-        # Save visible text of the full page
-        try:
-            visible_text = page.evaluate("() => document.body.innerText")
-            with open(f"{output_prefix}_visible_text.txt", "w", encoding="utf-8") as f:
-                f.write(visible_text.strip())
-        except Exception as e:
-            print(f"Failed to extract visible text: {e}")
-
         browser.close()
-
 
 # CLI usage
 if __name__ == "__main__":
