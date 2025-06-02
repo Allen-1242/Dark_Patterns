@@ -1,0 +1,7 @@
+[
+  "Clicking 'Cancel' opens a billing page instead of closing the popup.",
+  "A 'No Thanks' button redirects to a subscription page.",
+  "Clicking the 'X' on a modal opens a new tab with a payment offer.",
+  "Clicking 'Skip' unexpectedly starts a download or trial signup.",
+  "A close or back action takes you to a different service instead."
+]
