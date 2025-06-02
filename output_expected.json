@@ -1,0 +1,10 @@
+{
+  "element_text": "Quick add",
+  "element_selector": "button:has-text('Quick add')",
+  "element_attributes": {
+    "class": "button",
+    "data-quick-add": "/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&pr_rec_id=096f50738&pr_rec_pid=4702101274712&pr_ref_pid=136919781&pr_seq=uniform"
+  },
+  "expected_behavior": "inline add to cart",
+  "click_intent": "add_to_cart"
+}

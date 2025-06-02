@@ -1,0 +1,37 @@
+[
+  {
+    "type": "attributes",
+    "attributeName": "class",
+    "text": "Quick add",
+    "target": "<button class=\"button is-adding\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
+    "uid": "uid-0"
+  },
+  {
+    "type": "attributes",
+    "attributeName": "data-uid",
+    "text": "Quick add",
+    "target": "<button class=\"button is-adding\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
+    "uid": "uid-0"
+  },
+  {
+    "type": "attributes",
+    "attributeName": "hidden",
+    "text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+    "target": "<div class=\"popover-content\" hidden=\"\" data-uid=\"uid-1\"> <div class=\"content-scroll\"> The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are",
+    "uid": "uid-1"
+  },
+  {
+    "type": "attributes",
+    "attributeName": "data-uid",
+    "text": "The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are entirely subjective, and your results may differ. We do not monitor, control, edit, or guarantee the accuracy, reliability, or completeness of these reviews. We encourage customers to make an informed purchase decision by considering professional advice and thorough personal research.",
+    "target": "<div class=\"popover-content\" hidden=\"\" data-uid=\"uid-1\"> <div class=\"content-scroll\"> The reviews, images and testimonials available on this website are provided by independent users and do not reflect the views, opinions, or endorsements of Flat Tummy Co. Please note that individual experiences are",
+    "uid": "uid-1"
+  },
+  {
+    "type": "attributes",
+    "attributeName": "class",
+    "text": "Quick add",
+    "target": "<button class=\"button\" data-quick-add=\"/products/apple-cider-vinegar-gummies?pr_prod_strat=pinned&amp;pr_rec_id=096f50738&amp;pr_rec_pid=4702101274712&amp;pr_ref_pid=136919781&amp;pr_seq=uniform\" data-uid=\"uid-0\"> <span>Quick add</span> </button>",
+    "uid": "uid-0"
+  }
+]
