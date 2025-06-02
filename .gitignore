@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+venv/
+.env
+
+# FAISS & data artifacts
+*.faiss
+*.index.json
+
+# VSCode
+.vscode/
+
+# Node (if using Puppeteer)
+node_modules/
