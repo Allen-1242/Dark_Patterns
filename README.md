@@ -2,3 +2,5 @@ Dark Patterns is a browser extension that identifies deceptive design elements o
 
 You can install it on Chrome or Firefox.
 Please note: the backend is currently hosted on a personal server, so connections may occasionally be intermittent as I work out long-term hosting and funding.
+
+This project is currently in development.
