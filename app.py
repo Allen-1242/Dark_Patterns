@@ -1,9 +1,33 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from retriever import retrieve_context
+from scrape_dom import run_scraper_on_url
+from fastapi.middleware.cors import CORSMiddleware
+
 import requests
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Restrict to the origin
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+class URLInput(BaseModel):
+    url: str
+
+@app.post("/scan")
+def scan_page(input: URLInput):
+    try:
+        result = run_scraper_on_url(input.url)
+        return {"status": "success", "message": result}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+
+
 
 # Request schema
 class PatternRequest(BaseModel):

@@ -2,4 +2,12 @@ sentence-transformers
 faiss-cpu
 fastapi
 uvicorn
+fastapi
+uvicorn
+pydantic
+requests
+ollama
+playwright
+faiss-cpu
+transformers
 

@@ -114,3 +114,8 @@ if __name__ == "__main__":
     else:
         url = sys.argv[1]
         scrape_dom_all_clickables(url)
+
+# FastAPI endpoint to run the scraper
+def run_scraper_on_url(url, output_prefix="output"):
+    scrape_dom_all_clickables(url, output_prefix)
+    return f"Scraping complete. Output prefix: {output_prefix}"

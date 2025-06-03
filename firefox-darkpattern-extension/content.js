@@ -11,7 +11,7 @@ const observer = new MutationObserver((mutationsList) => {
       };
     });
   
-    fetch("http://localhost:5000/analyze", {
+    fetch("http://104.236.203.213:5000/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ mutations: data })
