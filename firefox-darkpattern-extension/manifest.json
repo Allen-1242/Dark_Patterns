@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Pattern Detector",
+    "version": "1.0",
+    "description": "Detects dark patterns based on DOM changes and LLM classification.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
