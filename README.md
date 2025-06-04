@@ -4,3 +4,5 @@ You can install it on Chrome or Firefox.
 Please note: the backend is currently hosted on a personal server, so connections may occasionally be intermittent as I work out long-term hosting and funding.
 
 This project is currently in development.
+
+https://addons.mozilla.org/en-US/firefox/addon/9c4a67aa6b8f4ae78b70/
