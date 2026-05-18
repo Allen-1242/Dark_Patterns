@@ -45,7 +45,7 @@ Analyze the interaction and return your answer strictly in this JSON format:
         parsed = json.loads(response['message']['content'])
         return parsed
     except json.JSONDecodeError:
-        print("⚠️ Failed to parse JSON. Raw response:")
+        print("Failed to parse JSON. Raw response:")
         print(response['message']['content'])
         return None
 
