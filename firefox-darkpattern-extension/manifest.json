@@ -1,23 +1,30 @@
 {
   "manifest_version": 2,
   "name": "Dark Pattern Detector",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Detects dark patterns on websites.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dark-pattern-detector@allensunny.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": false
+      }
+    }
+  },
   "permissions": [
     "activeTab",
-    "tabs",
-    "http://*/",
-    "https://*/"
+    "tabs"
   ],
-  "background": {
-    "scripts": ["background.js"]
-  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "browser_action": {
     "default_title": "Scan for Dark Patterns"
   }
