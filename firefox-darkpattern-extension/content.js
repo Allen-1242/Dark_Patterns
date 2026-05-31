@@ -11,7 +11,7 @@ const observer = new MutationObserver((mutationsList) => {
       };
     });
   
-    fetch("http://104.236.203.213:5000/analyze", {
+    fetch("https://Allens1242-DarkPatterns.hf.space/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ mutations: data })
