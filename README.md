@@ -5,4 +5,4 @@ Please note: the backend is currently hosted on a personal server, so connection
 
 This project is currently in development.
 
-https://addons.mozilla.org/en-US/firefox/addon/9c4a67aa6b8f4ae78b70/
+[https://addons.mozilla.org/en-US/firefox/addon/9c4a67aa6b8f4ae78b70/](https://addons.mozilla.org/en-US/firefox/addon/dark-patterns-detector/)
